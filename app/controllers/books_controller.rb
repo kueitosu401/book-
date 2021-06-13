@@ -15,6 +15,9 @@ class BooksController < ApplicationController
     book = Book.new(books_params)
     book.save
     redirect_to books_path
+ 
+    
+    
   end
 
   def edit
