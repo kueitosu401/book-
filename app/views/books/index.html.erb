@@ -27,9 +27,15 @@
      <% @books.each do |list| %>
     <tr>
     <td><%= list.title %></td>
+
     <td><%= list.body %></td>
+    
+     <td><%= link_to "Show", book_path(list.id)%></td>
+     <td><%= link_to "Edit", edit_book_path(list.id)%></td>
+     <td><%= link_to "Destroy", book_path(list.id), method: :delete %></td>
+
     </tr>
-   <% end %>
+    <% end %>
   
   </tbody>
 </table>
@@ -55,4 +61,3 @@
 </form>
   </body>
 </html>
-
