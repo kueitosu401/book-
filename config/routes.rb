@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'todolists/new'
 resources :homes
  # get 'books/index'
  # get 'books/show'
