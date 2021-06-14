@@ -1,8 +1,16 @@
-
+<%= flash[:success] %>
+<%= flash[:danger] %>
 <p><strong>Title: </strong><%= @books.title %><p>
 <p><strong>Body: </strong><%= @books.body %></p>
 
-<a href="books/:id/edit">Edit</a>
+
+
+
+
+<%=link_to 'Edit', edit_book_path(@books) %>
+
 <span>|</span>
 
-<a href="/books">Back</a>
+
+<%=link_to 'Back', books_path %>
+
