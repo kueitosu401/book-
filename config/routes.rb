@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-resources :homes
+root to: 'homes#index'
  # get 'books/index'
  # get 'books/show'
  #  get 'books/new'
